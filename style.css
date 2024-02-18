@@ -5,7 +5,6 @@
 
 body {
     width: 100%;
-    position: fixed;
     z-index: 100;
 }
 
@@ -18,7 +17,8 @@ body {
 .titulo {
     width: 40%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .nvbar {
@@ -63,13 +63,24 @@ nav ul li:hover {
 
 .imagen-presentacion {
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .imagen {
     width: 100%;
     background-size: cover;
+    height: 100vh;
     opacity: 80%;
+}
+
+.texto-imagen1 {
+    margin-left: 4%;
+    font-size: 69px;
+}
+
+.texto-imagen2 {
+    font-size: 52px;
+    margin-left: 3%;
 }
 
 .texto-imagen {
@@ -78,8 +89,271 @@ nav ul li:hover {
     left: 48%;
     transform: translate(-50%, -50%);
     color: #d6d6d6;
-    font-size: 34px;
     text-align: center;
 }
 
-dd {}
+.seccion {
+    background-color: #001F3F;
+    color: #ffffff;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seccion-titulo {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 38px;
+}
+
+.texto-oscuro {
+    margin-top: 2%;
+    color: #cccccc;
+    text-align: center;
+    font-size: 28px;
+    text-align: justify;
+}
+
+.primera-seccion {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contenedor-texto {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.Tiempo-desarollando {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Tiempo-desarollando-texto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #cccccc;
+}
+
+.Tiempo-desarollando-texto1 {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #cccccc;
+}
+
+.titulo {
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.segunda-seccion {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.seccion1 {
+    background-color: #385069;
+    color: #ffffff;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.contenedor-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.div1 {
+    margin-top: 1.5%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.div2 {
+    margin-top: 1.5%;
+    width: 50%;
+    height: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seccion-titulo3 {
+    font-size: 33px;
+    color: #e0dfdf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-titulo3-cursos {
+    font-size: 33px;
+    color: #e0dfdf;
+    display: flex;
+    align-items: center;
+    margin-left: 16%;
+}
+
+.seccion-titulo3-bo {
+    font-size: 33px;
+    color: #e0dfdf;
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    margin-left: -2%;
+}
+
+.seccion-titulo4 {
+    font-size: 33px;
+    color: #e0dfdf;
+    height: 0%;
+}
+
+.divPequeno {
+    margin-top: 3%;
+    padding-left: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.divPequeno1 {
+    margin-top: 3%;
+    padding-left: 38%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.divPequeno2 {
+    margin-top: 3%;
+    padding-left: 37%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul {
+    list-style-type: disc;
+    color: rgb(213, 208, 208);
+}
+
+li {
+    font-size: 24px;
+}
+
+.div1-cursos {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.divPequeno-cursos {
+    margin-top: 3%;
+    padding-left: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contenedor-experiencia {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.experencia-laboral-50 {
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    border-right: 2px solid white;
+}
+
+.experencia-laboral {
+    width: 50%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    margin-left: 3%;
+}
+
+.parrafo-experiencia {
+    font-size: 22px;
+}
+
+.parrafo-experiencia1 {
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+}
+
+.experencia-laboral-div {
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.experencia-laboral-div-1 {
+    width: 20%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.experencia-laboral-50-1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experencia-laboral-50-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.experencia-laboral-texto {
+    width: 80%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.experencia-laboral-texto1 {
+    margin-top: 1%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.experencia-laboral-texto2 {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
