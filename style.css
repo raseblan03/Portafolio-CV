@@ -164,7 +164,7 @@ nav ul li:hover {
 }
 
 .seccion1 {
-    background-color: #385069;
+    background-color: #2c3e50;
     color: #ffffff;
     width: 100%;
     padding: 50px 0;
@@ -282,6 +282,13 @@ li {
     flex-wrap: nowrap;
 }
 
+.contenedor-educacion {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .experencia-laboral-50 {
     width: 50%;
     height: 120px;
@@ -289,6 +296,14 @@ li {
     display: flex;
     flex-wrap: nowrap;
     border-right: 2px solid white;
+}
+
+.estudios-50 {
+    width: 50%;
+    height: 120px;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .experencia-laboral-50-50 {
@@ -368,4 +383,25 @@ li {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.titulo-educacion {
+    width: 100%;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 4%;
+}
+
+.periodo-educacion {
+    width: 100%;
+    font-style: italic;
+    color: #9e9494;
+    margin-bottom: 5px;
+}
+
+.educacion-item {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
 }
