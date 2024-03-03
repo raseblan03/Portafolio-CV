@@ -12,6 +12,12 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    z-index: 1000;
+    position: fixed;
+    background-color: #252a55;
+    opacity: 0.85;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .titulo {
@@ -22,7 +28,7 @@ body {
 }
 
 .nvbar {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
@@ -31,7 +37,6 @@ body {
 nav ul {
     list-style: none;
     overflow: hidden;
-    background-color: #333;
     font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
