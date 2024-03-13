@@ -27,11 +27,51 @@ body {
     align-items: center;
 }
 
+.icono {
+    width: 17%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2%;
+}
+
+.lis-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+}
+
+.imagen-nav {
+    display: flex;
+    width: 30px;
+}
+
+.imagen-nav-candado {
+    display: flex;
+    width: 20px;
+}
+
+.parrafo-web {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    font-size: 20px;
+}
+
 .nvbar {
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-end;
+    margin-right: 1%;
+}
+
+.titulo-nav {
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    color: white;
 }
 
 nav ul {
@@ -52,7 +92,6 @@ nav ul li a {
     padding: 0 20px;
     color: #fff;
     text-decoration: none;
-    margin-right: 40px;
 }
 
 nav ul li:hover {
@@ -409,4 +448,32 @@ li {
     width: 60%;
     display: flex;
     flex-wrap: wrap;
+}
+
+.alert {
+    position: fixed;
+    top: 7%;
+    z-index: 1000;
+    right: -400px;
+    background-color: rgb(161, 255, 161);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-out;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0.5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+.alert p {
+    margin: 0;
 }

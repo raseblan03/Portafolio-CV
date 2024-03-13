@@ -5,60 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>CV</title>
 </head>
 
 <body>
     <nav>
         <ul>
-            <div class="container">
-                <div class="nvbar">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#perfil">Perfil</a></li>
-                    <li><a href="#Objetivos">Habilidades Destacadas</a></li>
-                    <li><a href="#Experiencialaboral">Experiencia laboral</a></li>
-                    <li><a href="#Estudios">Estudios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+            <div class="container" id="container">
+                <div class="titulo-nav ">
+                    <div class="icono"><img class="imagen-nav" src="./img/ordenador.png" alt=" "></div>
+                    <div class="parrafo-web">
+                        Curriculum Web
+                    </div>
+
+                </div>
+                <div class="nvbar ">
+                    <li class="lis "><a href="#inicio ">Inicio</a></li>
+                    <li class="lis "><a href="#perfil ">Perfil</a></li>
+                    <li class="lis "><a href="#Objetivos ">Habilidades Destacadas</a></li>
+                    <li class="lis "><a href="#Experiencialaboral ">Experiencia laboral</a></li>
+                    <li class="lis "><a href="#Estudios ">Estudios</a></li>
+                    <li class="lis "><a href="#contacto ">Contacto</a></li>
+                    <li class="lis-imagen " onclick="desbloquearCandado()"><img id="imagen-candado" class="imagen-nav-candado" src="./img/bloquear.png" alt=" "></li>
                 </div>
             </div>
         </ul>
     </nav>
-
-    <div id="inicio" class="imagen-presentacion">
+    <div id="alert" class="alert">
+        <span class="close-btn" onclick="closeAlert(true)">x</span>
+        <p>¡Este es un mensaje de alerta!</p>
+    </div>
+    <div id="inicio" class="imagen-presentacion ">
         <div>
-            <img class="imagen" src="./img/karim-manjra-6ybGCLrzy_w-unsplash.jpg" alt="">
+            <img class="imagen " src="./img/karim-manjra-6ybGCLrzy_w-unsplash.jpg " alt=" ">
         </div>
-        <div class="texto-imagen">
-            <h3 class="texto-imagen1">Raul Serena Blanchart</h3>
-            <h4 class="texto-imagen2">Desarollador web</h4>
+        <div class="texto-imagen ">
+            <h3 class="texto-imagen1 ">Raul Serena Blanchart</h3>
+            <h4 class="texto-imagen2 ">Desarollador web</h4>
         </div>
+
     </div>
     <section id="perfil" class="seccion">
-        <div class="primera-seccion">
-            <h2 class="seccion-titulo">Perfil</h2>
-            <p class="texto-oscuro">
+        <div class="primera-seccion ">
+            <h2 class="seccion-titulo ">Perfil</h2>
+            <p class="texto-oscuro ">
                 Hola, soy Raúl, desarrollador web con experiencia en el mundo del código, destacándome en proyectos con Angular, Laravel, React, entre otros. Más allá de mi habilidad técnica, mi dedicación al deporte y la mentalidad proactiva influyen positivamente en
                 mi enfoque profesional. La disciplina y adaptabilidad que desarrollo en lo personal se reflejan en mi trabajo, aportando un valor distintivo a cada proyecto.
             </p>
         </div>
-        <div class="contenedor-texto">
-            <div class="Tiempo-desarollando">
-                <p class="Tiempo-desarollando-texto">Total de experiencia: 12 meses ( 4 meses de prácticas + 8 meses como trabajador)</p>
+        <div class="contenedor-texto ">
+            <div class="Tiempo-desarollando ">
+                <p class="Tiempo-desarollando-texto ">Total de experiencia: 12 meses ( 4 meses de prácticas + 8 meses como trabajador)</p>
                 <br>
-                <p class="Tiempo-desarollando-texto1">Puesto actual: Desarrollador web </p>
+                <p class="Tiempo-desarollando-texto1 ">Puesto actual: Desarrollador web </p>
             </div>
         </div>
         <br><br><br> <br><br><br> <br><br><br> <br><br><br>
     </section>
-    <section id="Objetivos" class="seccion1">
-        <div class="segunda-seccion">
-            <div class="titulo">
-                <h2 class="seccion-titulo">Habilidades Destacadas</h2>
+    <section id="Objetivos" class="seccion1 ">
+        <div class="segunda-seccion ">
+            <div class="titulo ">
+                <h2 class="seccion-titulo ">Habilidades Destacadas</h2>
             </div>
-            <div class="contenedor-div">
-                <div class="div1">
-                    <h4 class="seccion-titulo3">Lenguajes y Frameworks</h4>
-                    <div class="divPequeno">
+            <div class="contenedor-div ">
+                <div class="div1 ">
+                    <h4 class="seccion-titulo3 ">Lenguajes y Frameworks</h4>
+                    <div class="divPequeno ">
                         <ul>
                             <li>HTML</li>
                             <li>AJAX</li>
@@ -70,9 +83,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="div2">
-                    <h4 class="seccion-titulo4">Lenguajes de Comunicación</h4>
-                    <div class="divPequeno2">
+                <div class="div2 ">
+                    <h4 class="seccion-titulo4 ">Lenguajes de Comunicación</h4>
+                    <div class="divPequeno2 ">
                         <ul>
                             <li> Inglés - Nivel medio</li>
                             <li>Español - Nativo</li>
@@ -83,10 +96,10 @@
                 </div>
             </div>
 
-            <div class="contenedor-div">
-                <div class="div1">
-                    <h5 class="seccion-titulo3-bo">Tecnologías Adicionales</h5>
-                    <div class="divPequeno">
+            <div class="contenedor-div ">
+                <div class="div1 ">
+                    <h5 class="seccion-titulo3-bo ">Tecnologías Adicionales</h5>
+                    <div class="divPequeno ">
                         <ul>
                             <li>Redux</li>
                             <li>CSS </li>
@@ -94,9 +107,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="div2">
-                    <h5 class="seccion-titulo4">Competencias Profesionales</h5>
-                    <div class="divPequeno1">
+                <div class="div2 ">
+                    <h5 class="seccion-titulo4 ">Competencias Profesionales</h5>
+                    <div class="divPequeno1 ">
                         <ul>
                             <li>Liderazgo</li>
                             <li>Trabajo en equipo</li>
@@ -107,16 +120,16 @@
                     </div>
                 </div>
             </div>
-            <div class="contenedor-div">
-                <div class="div1-cursos">
-                    <h5 class="seccion-titulo3-cursos">Cursos adicionales</h5>
-                    <div class="divPequeno-cursos">
+            <div class="contenedor-div ">
+                <div class="div1-cursos ">
+                    <h5 class="seccion-titulo3-cursos ">Cursos adicionales</h5>
+                    <div class="divPequeno-cursos ">
                         <ul>
                             <li>
-                                <a style="color: white;" href="https://www.udemy.com/course/building-your-english-brain/">Building your english brain</a>
+                                <a style="color: white; " href="https://www.udemy.com/course/building-your-english-brain/ ">Building your english brain</a>
                             </li>
                             <li>
-                                <a style="color: white;" href="https://www.udemy.com/course/seguridad-informatica-practicas-en-kali-linux-retos-ctf/?kw=hacking+etico+avanzado&src=sac">Curso avanzado de cyberseguridad en kali linux</a>
+                                <a style="color: white; " href="https://www.udemy.com/course/seguridad-informatica-practicas-en-kali-linux-retos-ctf/?kw=hacking+etico+avanzado&src=sac ">Curso avanzado de cyberseguridad en kali linux</a>
                             </li>
                         </ul>
                     </div>
@@ -126,51 +139,51 @@
         </div>
         <br><br><br> <br><br><br>
     </section>
-    <section id="Experiencialaboral" class="seccion">
-        <div class="primera-seccion">
-            <h2 class="seccion-titulo">Experiencia laboral</h2>
+    <section id="Experiencialaboral" class="seccion ">
+        <div class="primera-seccion ">
+            <h2 class="seccion-titulo ">Experiencia laboral</h2>
         </div>
-        <div class="contenedor-experiencia">
-            <div class="experencia-laboral-50">
-                <div class="experencia-laboral-div">
-                    <div class="experencia-laboral-50-1">
-                        <div class="experencia-laboral-texto">
-                            <p class="parrafo-experiencia"><b>DXC Technology</b></p>
+        <div class="contenedor-experiencia ">
+            <div class="experencia-laboral-50 ">
+                <div class="experencia-laboral-div ">
+                    <div class="experencia-laboral-50-1 ">
+                        <div class="experencia-laboral-texto ">
+                            <p class="parrafo-experiencia "><b>DXC Technology</b></p>
                         </div>
-                        <div class="experencia-laboral-texto1">
-                            <p class="parrafo-experiencia1">Construcción de la aplicación web en distintos lenguajes y proyectos. Concretamente en React y Angular, obteniendo grandes conocimientos sobre estos lenguajes.</p>
+                        <div class="experencia-laboral-texto1 ">
+                            <p class="parrafo-experiencia1 ">Construcción de la aplicación web en distintos lenguajes y proyectos. Concretamente en React y Angular, obteniendo grandes conocimientos sobre estos lenguajes.</p>
                         </div>
                     </div>
                 </div>
-                <div class="experencia-laboral-div-1">
-                    <div class="experencia-laboral-50-2">
-                        <div class="experencia-laboral-texto2">
-                            <p class="parrafo-experiencia"><b>Fechas</b></p>
+                <div class="experencia-laboral-div-1 ">
+                    <div class="experencia-laboral-50-2 ">
+                        <div class="experencia-laboral-texto2 ">
+                            <p class="parrafo-experiencia "><b>Fechas</b></p>
                         </div>
-                        <div class="experencia-laboral-texto2">
-                            <p class="parrafo-experiencia1">13/02/23-actualidad</p>
+                        <div class="experencia-laboral-texto2 ">
+                            <p class="parrafo-experiencia1 ">13/02/23-actualidad</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="experencia-laboral-50-50">
-                <div class="experencia-laboral-div">
-                    <div class="experencia-laboral-50-1-1">
-                        <div class="experencia-laboral-texto">
-                            <p class="parrafo-experiencia"><b>Lupiquinmoda (lupiquimoda.com)</b></p>
+            <div class="experencia-laboral-50-50 ">
+                <div class="experencia-laboral-div ">
+                    <div class="experencia-laboral-50-1-1 ">
+                        <div class="experencia-laboral-texto ">
+                            <p class="parrafo-experiencia "><b>Lupiquinmoda (lupiquimoda.com)</b></p>
                         </div>
-                        <div class="experencia-laboral-texto1">
-                            <p class="parrafo-experiencia1">Diseño, construcción y mantenimiento de la página web.</p>
+                        <div class="experencia-laboral-texto1 ">
+                            <p class="parrafo-experiencia1 ">Diseño, construcción y mantenimiento de la página web.</p>
                         </div>
                     </div>
                 </div>
-                <div class="experencia-laboral-div-1">
-                    <div class="experencia-laboral-50-2">
-                        <div class="experencia-laboral-texto2">
-                            <p class="parrafo-experiencia"><b>Fechas</b></p>
+                <div class="experencia-laboral-div-1 ">
+                    <div class="experencia-laboral-50-2 ">
+                        <div class="experencia-laboral-texto2 ">
+                            <p class="parrafo-experiencia "><b>Fechas</b></p>
                         </div>
-                        <div class="experencia-laboral-texto2">
-                            <p class="parrafo-experiencia1">09/09/22–15/12/22 </p>
+                        <div class="experencia-laboral-texto2 ">
+                            <p class="parrafo-experiencia1 ">09/09/22–15/12/22 </p>
                         </div>
                     </div>
                 </div>
@@ -179,36 +192,36 @@
         </div>
 
     </section>
-    <section id="Estudios" class="seccion1">
-        <div class="primera-seccion">
-            <div class="titulo">
-                <h2 class="seccion-titulo">Educación</h2>
+    <section id="Estudios" class="seccion1 ">
+        <div class="primera-seccion ">
+            <div class="titulo ">
+                <h2 class="seccion-titulo ">Educación</h2>
             </div>
         </div>
-        <div class="contenedor-educacion">
-            <div class="educacion-item">
+        <div class="contenedor-educacion ">
+            <div class="educacion-item ">
                 <ul>
                     <li>
-                        <h3 class="titulo-educacion">Grado Superior en Diseño de Aplicaciones Web - Joan XXIII</h3>
-                        <p class="periodo-educacion">12/09/22 – 22/06/23</p>
+                        <h3 class="titulo-educacion ">Grado Superior en Diseño de Aplicaciones Web - Joan XXIII</h3>
+                        <p class="periodo-educacion ">12/09/22 – 22/06/23</p>
                 </ul>
 
             </div>
-            <div class="contenedor-educacion">
-                <div class="educacion-item">
+            <div class="contenedor-educacion ">
+                <div class="educacion-item ">
                     <ul>
                         <li>
-                            <h3 class="titulo-educacion">Grado superior de administración de sistemas informáticos y redes - Joan XXIII</h3>
-                            <p class="periodo-educacion">12/09/21 – 3/06/22</p>
+                            <h3 class="titulo-educacion ">Grado superior de administración de sistemas informáticos y redes - Joan XXIII</h3>
+                            <p class="periodo-educacion ">12/09/21 – 3/06/22</p>
                     </ul>
 
                 </div>
-                <div class="contenedor-educacion">
-                    <div class="educacion-item">
+                <div class="contenedor-educacion ">
+                    <div class="educacion-item ">
                         <ul>
                             <li>
-                                <h3 class="titulo-educacion">Bachillerato tecnológico - Francesc Macia </h3>
-                                <p class="periodo-educacion">12/09/19 – 22/05/21</p>
+                                <h3 class="titulo-educacion ">Bachillerato tecnológico - Francesc Macia </h3>
+                                <p class="periodo-educacion ">12/09/19 – 22/05/21</p>
                             </li>
                         </ul>
 
