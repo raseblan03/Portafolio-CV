@@ -145,6 +145,14 @@ nav ul li:hover {
     justify-content: center;
 }
 
+.seccion2 {
+    background-color: #001F3F;
+    color: #ebebeb;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .seccion-titulo {
     display: flex;
     align-items: center;
@@ -476,4 +484,71 @@ li {
 
 .alert p {
     margin: 0;
+}
+
+.footer-div {
+    width: 50%;
+    font-size: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-div-content {
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 2%;
+}
+
+.footer-div-title {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-left: 80px;
+    align-items: center;
+}
+
+.constact {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: #d4d2d2;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    margin-bottom: 10px;
+    font-size: 17px;
+    width: 100%;
+}
+
+.info-item strong {
+    font-weight: bold;
+}
+
+.email-link,
+.phone-link {
+    text-decoration: none;
+    color: #f5f7f8;
+}
+
+.email-link:hover,
+.phone-link:hover {
+    text-decoration: underline;
 }
