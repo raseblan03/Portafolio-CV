@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,6 +10,7 @@ body {
 }
 
 .container {
+    height: 5.5%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -21,10 +23,10 @@ body {
 }
 
 .titulo {
-    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .icono {
@@ -154,6 +156,15 @@ nav ul li:hover {
 }
 
 .seccion-titulo {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 38px;
+}
+
+.seccion-titulo-copia {
+    margin-top: 5%;
     display: flex;
     align-items: center;
     align-content: center;
@@ -186,6 +197,7 @@ nav ul li:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    font-size: 17px;
 }
 
 .Tiempo-desarollando-texto {
@@ -204,8 +216,7 @@ nav ul li:hover {
 }
 
 .titulo {
-    max-width: 800px;
-    margin: 0 auto;
+    justify-content: center;
     align-items: center;
     justify-content: center;
 }
@@ -247,7 +258,8 @@ nav ul li:hover {
     justify-content: center;
 }
 
-.seccion-titulo3 {
+.seccion-titulo3,
+.seccion-titulo3-copia {
     font-size: 33px;
     color: #e0dfdf;
     display: flex;
@@ -341,6 +353,14 @@ li {
     flex-wrap: wrap;
 }
 
+.estudios-50 {
+    width: 50%;
+    height: 120px;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .experencia-laboral-50 {
     width: 50%;
     height: 120px;
@@ -348,14 +368,6 @@ li {
     display: flex;
     flex-wrap: nowrap;
     border-right: 2px solid white;
-}
-
-.estudios-50 {
-    width: 50%;
-    height: 120px;
-    margin-top: 2%;
-    display: flex;
-    flex-wrap: nowrap;
 }
 
 .experencia-laboral-50-50 {
@@ -380,6 +392,10 @@ li {
 }
 
 .parrafo-experiencia1 {
+    font-size: 19px;
+}
+
+.parrafo-experiencia1-copia {
     font-size: 19px;
 }
 
@@ -548,4 +564,319 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
+}
+
+.links {
+    color: rgb(213, 208, 208);
+}
+
+@media screen and (max-width: 1000px) {
+    .seccion-titulo {
+        font-size: 34px;
+        width: 100%;
+        justify-content: center;
+    }
+    .seccion-titulo-copia {
+        font-size: 34px;
+        width: 100%;
+        justify-content: center;
+    }
+    .texto-oscuro {
+        margin-top: 5%;
+        color: #cccccc;
+        font-size: 24px;
+        text-align: justify;
+    }
+    .primera-seccion {
+        max-width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .seccion {
+        padding: 25px 0px 0px 0px;
+    }
+    .experencia-laboral-50 {
+        width: 100%;
+        height: 120px;
+        margin-top: 6%;
+        display: flex;
+        flex-wrap: nowrap;
+        border-right: 0px solid white;
+    }
+    .experencia-laboral-50-50 {
+        width: 100%;
+        margin-top: 6%;
+    }
+    .contenedor-experiencia {
+        flex-wrap: wrap;
+    }
+    .Tiempo-desarollando {
+        display: block;
+    }
+    .seccion-titulo3,
+    .seccion-titulo3-copia {
+        font-size: 28px;
+    }
+    .seccion-titulo4 {
+        font-size: 28px;
+    }
+    .seccion-titulo3-bo {
+        font-size: 28px;
+    }
+    .seccion-titulo3-cursos {
+        font-size: 28px;
+    }
+    .titulo {
+        width: 100%;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor-div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .div1 {
+        justify-content: start;
+        width: 50%;
+        display: block;
+    }
+    .divPequeno {
+        justify-content: start;
+        padding-left: 22%;
+    }
+    .divPequeno2 {
+        justify-content: start;
+        padding-left: 15%;
+    }
+    .divPequeno1 {
+        justify-content: start;
+        padding-left: 15%;
+    }
+    .seccion-titulo3,
+    .seccion-titulo3-copia {
+        font-size: 26px;
+        margin-left: 10px;
+    }
+    .seccion-titulo4 {
+        font-size: 26px;
+    }
+    .seccion-titulo3-bo {
+        font-size: 26px;
+        margin-left: 10px;
+    }
+    .seccion-titulo3-cursos {
+        font-size: 26px;
+    }
+    .parrafo-experiencia1 {
+        font-size: 17px;
+    }
+    .parrafo-experiencia1-copia {
+        font-size: 17px;
+    }
+    .experencia-laboral-div {
+        width: 65%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .experencia-laboral-div-1 {
+        width: 35%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 668px) {
+    .seccion-titulo {
+        justify-content: center;
+        font-size: 28px;
+        margin-bottom: 2%;
+    }
+    .seccion-titulo-copia {
+        justify-content: start;
+        font-size: 28px;
+    }
+    .texto-oscuro {
+        margin-top: 5%;
+        color: #cccccc;
+        font-size: 22px;
+    }
+    .primera-seccion {
+        max-width: auto;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    .parrafo-experiencia1 {
+        font-size: 16px;
+        margin: 7px;
+        margin-top: 10px;
+        color: rgb(235, 235, 235);
+    }
+    .parrafo-experiencia1-copia {
+        font-size: 16px;
+        color: rgb(235, 235, 235);
+    }
+    .parrafo-experiencia {
+        font-size: 20px;
+        margin-top: 0px;
+        color: rgb(230, 230, 230);
+    }
+    .div1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+    }
+    .divPequeno {
+        width: 80%;
+        display: flex;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        justify-content: center;
+        padding-left: 0%;
+        /* padding-right: 14%; */
+    }
+    .divPequeno2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 0%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .divPequeno1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-left: 0%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .div2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0%;
+    }
+    .contenedor-div {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li {
+        margin-top: 1%;
+    }
+    .seccion-titulo3 {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        font-size: 24px;
+        margin-left: 0%;
+        margin-top: 1%;
+        border-bottom: 2px solid white;
+        padding-bottom: 2%;
+        /* margin-right: 11.2%; */
+    }
+    .seccion-titulo4 {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-size: 24px;
+        margin-left: 0%;
+        margin-top: 1%;
+        border-bottom: 2px solid white;
+        padding-bottom: 2%;
+    }
+    .seccion-titulo3-cursos {
+        margin-left: 3%;
+        font-size: 24px;
+        border-bottom: 2px solid white;
+        padding-bottom: 2%;
+    }
+    .seccion-titulo3-copia {
+        font-size: 24px;
+        margin-top: 6%;
+        /* margin-right: 9%; */
+    }
+    .experencia-laboral-texto {
+        height: auto;
+    }
+    .divPequeno-cursos {
+        padding-left: 7%;
+    }
+    .links {
+        font-size: 22px;
+    }
+    .educacion-item {
+        width: 87%;
+        display: flex;
+        justify-content: center;
+    }
+    .titulo-educacion {
+        font-size: 22px;
+    }
+    .experencia-laboral-50,
+    .experencia-laboral-50-50 {
+        height: 240px;
+    }
+}
+
+
+/* este es el tamaño solo para movil */
+
+@media screen and (max-width: 499px) {
+    .Tiempo-desarollando {
+        display: flex;
+        width: 100%;
+        margin-top: 40%;
+    }
+    .Tiempo-desarollando-texto {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+    }
+    .contenedor-texto {
+        width: 90%;
+        margin-top: 0%;
+        height: 2%;
+    }
+    .contenedor-experiencia {
+        height: 400px;
+    }
+    .experencia-laboral-50 {
+        height: 140px;
+    }
+    .experencia-laboral-50-50 {
+        height: 120px;
+    }
+    .experencia-laboral-texto {
+        height: 40px;
+    }
+    .experencia-laboral-div {
+        width: 55%;
+    }
+    .experencia-laboral-div-1 {
+        width: 45%;
+    }
+    .educacion-item {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+    }
+    .titulo-educacion {
+        font-size: 18px;
+    }
+    .periodo-educacion {
+        font-size: 18px;
+    }
+    .divPequeno-cursos {
+        padding-left: 11%;
+    }
+    .links {
+        font-size: 22px;
+    }
 }
