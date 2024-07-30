@@ -32,3 +32,18 @@ function closeAlert() {
     var alertBox = document.getElementById('alert');
     alertBox.style.right = '-200px';
 }
+
+
+const nvbar = document.querySelector("#nvbar");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+console.log(nvbar);
+console.log(abrir);
+
+abrir.addEventListener("click", () => {
+    nvbar.classList.add("visible");
+});
+
+cerrar.addEventListener("click", () => {
+    nvbar.classList.remove("visible");
+});

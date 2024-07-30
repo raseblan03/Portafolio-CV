@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>CV</title>
 </head>
 
@@ -14,13 +13,19 @@
         <ul>
             <div class="container" id="container">
                 <div class="titulo-nav ">
-                    <div class="icono"><img class="imagen-nav" src="./img/ordenador.png" alt=" "></div>
+                    <div class="icono">
+                        <a href="#inicio "><img class="imagen-nav" src="./img/ordenador.png" alt=" "></a>
+                    </div>
                     <div class="parrafo-web">
-                        Curriculum Web
+                        <a href="#inicio ">  Curriculum Web</a>
                     </div>
 
                 </div>
-                <div class="nvbar ">
+                <div class="div-abrir">
+                    <a id="abrir" class="hamburguesa"><img class="imagen-nav" src="./img/barra-de-menus (2).png" alt=" "></a>
+                </div>
+                <div id="nvbar" class="nvbar">
+                    <a id="cerrar" class="cerrar"><img class="imagen-nav" src="./img/cerrar.png" alt=" "></a>
                     <li class="lis "><a href="#inicio ">Inicio</a></li>
                     <li class="lis "><a href="#perfil ">Perfil</a></li>
                     <li class="lis "><a href="#Objetivos ">Habilidades Destacadas</a></li>
@@ -165,7 +170,7 @@
             <div class="experencia-laboral-50-50 ">
                 <div class="experencia-laboral-div ">
                     <div class="experencia-laboral-50-1-1 ">
-                        <div class="experencia-laboral-texto ">
+                        <div class="experencia-laboral-texto-copia ">
                             <p class="parrafo-experiencia "><b>Lupiquinmoda</b></p>
                         </div>
                         <div class="experencia-laboral-texto1 ">
@@ -213,7 +218,7 @@
 
                 </div>
                 <div class="contenedor-educacion ">
-                    <div class="educacion-item ">
+                    <div class="educacion-item-batx ">
                         <ul>
                             <li>
                                 <h3 class="titulo-educacion ">Bachillerato tecnológico - Francesc Macia </h3>
@@ -267,6 +272,7 @@
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

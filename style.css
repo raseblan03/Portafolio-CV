@@ -9,6 +9,10 @@ body {
     z-index: 100;
 }
 
+.hamburguesa {
+    display: none;
+}
+
 .container {
     height: 5.5%;
     width: 100%;
@@ -86,7 +90,7 @@ nav ul {
 
 nav ul li {
     font-size: 16px;
-    line-height: 50px;
+    line-height: 30px;
 }
 
 nav ul li a {
@@ -436,6 +440,13 @@ li {
 
 .experencia-laboral-texto {
     width: 80%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.experencia-laboral-texto-copia {
+    width: 80%;
     display: flex;
     justify-content: center;
 }
@@ -469,6 +480,12 @@ li {
 }
 
 .educacion-item {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.educacion-item-batx {
     width: 60%;
     display: flex;
     flex-wrap: wrap;
@@ -570,7 +587,59 @@ a {
     color: rgb(213, 208, 208);
 }
 
+.cerrar {
+    display: none;
+}
+
+@media screen and (max-width: 1650px) {
+    .icono {
+        width: 3%;
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 5%;
+        margin-left: 2%;
+    }
+    .titulo-nav {
+        width: 30%;
+    }
+    .nvbar {
+        width: 70%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        margin-right: 1%;
+    }
+    .parrafo-web {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .icono {
+        display: none;
+    }
+    .nvbar {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-right: 1%;
+    }
+    .parrafo-web {
+        display: none;
+    }
+    .titulo-nav {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1000px) {
+    nav ul li {
+        font-size: 14px;
+    }
     .seccion-titulo {
         font-size: 34px;
         width: 100%;
@@ -633,6 +702,75 @@ a {
 }
 
 @media screen and (max-width: 800px) {
+    .hamburguesa {
+        display: block;
+        cursor: pointer;
+        position: relative;
+    }
+    .hamburguesa::after .cerrar::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        transition: background-color 0.3s;
+        z-index: -1;
+    }
+    .hamburguesa:hover::after .cerrar:hover::after {
+        background-color: rgb(250, 250, 250);
+    }
+    .cerrar {
+        cursor: pointer;
+        position: relative;
+    }
+    .div-abrir {
+        padding: 2rem;
+    }
+    .parrafo-web {
+        display: block;
+    }
+    .titulo-nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        color: white;
+        align-items: center;
+    }
+    .icono {
+        display: flex;
+        margin-right: 2%;
+    }
+    .lis {
+        color: whitesmoke;
+    }
+    .cerrar {
+        display: block;
+        justify-content: end;
+    }
+    .nvbar.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .nvbar {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        display: flex;
+        right: 0;
+        flex-direction: column;
+        align-items: start;
+        background-color: rgb(12, 7, 7);
+        padding: 2rem;
+        width: 24%;
+        box-shadow: 0 0 0 100vmax rgb(113, 113, 113);
+    }
+    .lis-imagen {
+        display: none;
+    }
     .contenedor-div {
         display: flex;
         flex-wrap: wrap;
@@ -709,20 +847,29 @@ a {
         margin-left: 7%;
         margin-right: 7%;
     }
+    .experencia-laboral-texto1 {
+        width: 85%;
+    }
+    .experencia-laboral-div-1 {
+        height: 175px;
+    }
     .parrafo-experiencia1 {
-        font-size: 16px;
+        color: #ffffff;
         margin: 7px;
         margin-top: 10px;
-        color: rgb(235, 235, 235);
+        line-height: 1.3;
+        font-size: 16px;
     }
     .parrafo-experiencia1-copia {
         font-size: 16px;
-        color: rgb(235, 235, 235);
+        color: #ffffff;
+        line-height: 1.3;
     }
     .parrafo-experiencia {
         font-size: 20px;
         margin-top: 0px;
-        color: rgb(230, 230, 230);
+        height: 0px;
+        color: #ffffff;
     }
     .div1 {
         width: 100%;
@@ -803,7 +950,7 @@ a {
         /* margin-right: 9%; */
     }
     .experencia-laboral-texto {
-        height: auto;
+        height: 0px;
     }
     .divPequeno-cursos {
         padding-left: 7%;
@@ -816,12 +963,25 @@ a {
         display: flex;
         justify-content: center;
     }
+    .educacion-item-batx {
+        width: 87%;
+    }
     .titulo-educacion {
-        font-size: 22px;
+        font-size: 20px;
     }
     .experencia-laboral-50,
     .experencia-laboral-50-50 {
-        height: 240px;
+        height: 200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .contenedor-educacion {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .periodo-educacion {
+        font-size: 19px;
     }
 }
 
@@ -864,8 +1024,9 @@ a {
     }
     .educacion-item {
         width: 85%;
-        display: flex;
-        justify-content: center;
+    }
+    .educacion-item-batx {
+        width: 85%;
     }
     .titulo-educacion {
         font-size: 18px;
