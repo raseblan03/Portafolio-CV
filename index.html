@@ -9,35 +9,37 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <div class="container" id="container">
-                <div class="titulo-nav ">
-                    <div class="icono">
-                        <a href="#inicio "><img class="imagen-nav" src="./img/ordenador.png" alt=" "></a>
-                    </div>
-                    <div class="parrafo-web">
-                        <a href="#inicio ">  Curriculum Web</a>
-                    </div>
+    <header>
+        <nav>
+            <ul>
+                <div class="container" id="container">
+                    <div class="titulo-nav ">
+                        <div class="icono">
+                            <a href="#inicio "><img class="imagen-nav" src="./img/ordenador.png" alt=" "></a>
+                        </div>
+                        <div class="parrafo-web">
+                            <a href="#inicio ">  Curriculum Web</a>
+                        </div>
 
-                </div>
-                <div class="div-abrir">
-                    <a id="abrir" class="hamburguesa"><img class="imagen-nav" src="./img/barra-de-menus (2).png" alt=" "></a>
-                </div>
-                <div id="nvbar" class="nvbar">
-                    <a id="cerrar" class="cerrar"><img class="imagen-nav" src="./img/cerrar.png" alt=" "></a>
-                    <li class="lis "><a href="#inicio ">Inicio</a></li>
-                    <li class="lis "><a href="#perfil ">Perfil</a></li>
-                    <li class="lis "><a href="#Objetivos ">Habilidades Destacadas</a></li>
-                    <li class="lis "><a href="#Experiencialaboral ">Experiencia laboral</a></li>
-                    <li class="lis "><a href="#Estudios ">Estudios</a></li>
-                    <li class="lis "><a href="#contacto ">Contacto</a></li>
-                    <li class="lis-imagen " onclick="desbloquearCandado()"><img id="imagen-candado" class="imagen-nav-candado" src="./img/bloquear.png" alt=" "></li>
-                </div>
-            </div>
-        </ul>
+                    </div>
+                    <div class="div-abrir">
+                        <a id="abrir" class="hamburguesa"><img class="imagen-nav" src="./img/barra-de-menus (3).png" alt=" "></a>
+                    </div>
+                    <div id="nvbar" class="nvbar">
 
-    </nav>
+                        <li class="lis  "><a onclick="closeNav()" href="#inicio ">Inicio</a></li>
+                        <li class="lis "><a onclick="closeNav()" href="#perfil ">Perfil</a></li>
+                        <li class="lis "><a onclick="closeNav()" href="#Objetivos ">Habilidades Destacadas</a></li>
+                        <li class="lis "><a onclick="closeNav()" href="#Experiencialaboral ">Experiencia laboral</a></li>
+                        <li class="lis "><a onclick="closeNav()" href="#Estudios ">Estudios</a></li>
+                        <li class="lis "><a onclick="closeNav()" href="#contacto ">Contacto</a></li>
+                        <li class="lis-imagen " onclick="desbloquearCandado()"><img id="imagen-candado" class="imagen-nav-candado" src="./img/bloquear.png" alt=" "></li>
+                    </div>
+                </div>
+            </ul>
+
+        </nav>
+    </header>
     <div id="alert" class="alert">
         <span class="close-btn" onclick="closeAlert(true)">x</span>
         <p>¡Este es un mensaje de alerta!</p>
@@ -50,7 +52,9 @@
     </div>
     <section id="perfil" class="seccion">
         <div class="primera-seccion ">
-            <h2 class="seccion-titulo ">Perfil</h2>
+            <div class="titulo ">
+                <h2 class="seccion-titulo ">Perfil</h2>
+            </div>
             <p class="texto-oscuro ">
                 Hola, soy Raúl, desarrollador web con experiencia en el mundo del código, destacándome en proyectos con Angular, Laravel, React, entre otros. Más allá de mi habilidad técnica, mi dedicación al deporte y la mentalidad proactiva influyen positivamente en
                 mi enfoque profesional. La disciplina y adaptabilidad que desarrollo en lo personal se reflejan en mi trabajo, aportando un valor distintivo a cada proyecto.
@@ -141,9 +145,7 @@
         <br><br><br> <br><br><br>
     </section>
     <section id="Experiencialaboral" class="seccion ">
-        <div class="primera-seccion ">
-            <h2 class="seccion-titulo-copia ">Experiencia laboral</h2>
-        </div>
+        <h2 class="seccion-titulo-copia ">Experiencia laboral</h2>
         <div class="contenedor-experiencia ">
             <div class="experencia-laboral-50 ">
                 <div class="experencia-laboral-div ">
@@ -194,11 +196,11 @@
 
     </section>
     <section id="Estudios" class="seccion1 ">
-        <div class="primera-seccion ">
-            <div class="titulo ">
-                <h2 class="seccion-titulo ">Estudios</h2>
-            </div>
+
+        <div class="titulo-copia ">
+            <h2 class="seccion-titulo ">Estudios</h2>
         </div>
+
         <div class="contenedor-educacion ">
             <div class="educacion-item ">
                 <ul>

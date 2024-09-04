@@ -34,16 +34,42 @@ function closeAlert() {
 }
 
 
+
+
+function closeNav() {
+    const nvbar = document.querySelector("#nvbar");
+    const cerrar = document.querySelector("#cerrar");
+    nvbar.classList.remove("visible");
+    const body = document.body;
+    body.classList.remove('no-scroll');
+
+
+}
+
+document.addEventListener('click', function(event) {
+    const nav = document.querySelector('.nvbar');
+
+
+    const hamburguesa = document.querySelector('.hamburguesa');
+    if (!nav.contains(event.target) && !hamburguesa.contains(event.target)) {
+        closeNav();
+    }
+});
+
+
 const nvbar = document.querySelector("#nvbar");
 const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
-console.log(nvbar);
-console.log(abrir);
+
+
 
 abrir.addEventListener("click", () => {
     nvbar.classList.add("visible");
+    const body = document.body;
+    body.classList.add('no-scroll');
 });
 
-cerrar.addEventListener("click", () => {
-    nvbar.classList.remove("visible");
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 800) {
+        closeNav();
+    }
 });
